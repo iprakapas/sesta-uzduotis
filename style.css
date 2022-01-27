@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+body {
+    background: #C1DEAE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 span {
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    transition: all 0.5s;
+    font-family: Mochiy Pop P One;
+    font-size: 3em;
+    color: #F2F5C8;
+}
+
+svg {
+    position: relative;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+h1:hover span:nth-of-type(1) {
+    cursor: not-allowed;
+    top: -20px;
+    transform: rotate(360deg);
+}
+h1:hover span:nth-of-type(2) {
+    cursor: not-allowed;
+    transition-delay: 0.25s;
+    top: -20px;
+}
+h1:hover span:nth-of-type(3) {
+    cursor: not-allowed;
+    transition-delay: 0.5s;
+    top: -20px;
+}
+h1:hover span:nth-of-type(4) {
+    cursor: not-allowed;
+    transition-delay: 0.75s;
+    top: -20px;
+}
+h1:hover span:nth-of-type(5) {
+    cursor: not-allowed;
+    transition-delay: 1s;
+    top: -20px;
+}
+h1:hover span:nth-of-type(6) {
+    cursor: not-allowed;
+    transition-delay: 1.25s;
+    top: -20px;
+}
+h1:hover span:nth-of-type(7) {
+    cursor: not-allowed;
+    transition-delay: 1.5s;
+    top: -20px;
+}
+h1:hover span:nth-of-type(8) {
+    cursor: not-allowed;
+    transition-delay: 1.75s;
+    top: -20px;
+}
+
+h1:hover span:nth-of-type(9) {
+    cursor: not-allowed;
+    transition-delay: 2s;
+    top: -20px;
+    transform: rotateX(180deg);
+}
+
+/* Antra animacija */
+
+.ground {
+    position: absolute;
+    top:75%;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background-color:#647377;
+ }
+.square {
+    background: #219F94;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    transform-origin:200px 200px;
+    animation: roll 2s linear infinite;
+}
+.placement {
+    position: absolute;
+    bottom:25%;
+    left: 35%;
+    animation: move-back 2s linear infinite;
+}
+
+@keyframes move-back {
+    0% {
+       transform:translateX(0px);
+    }
+    100% {
+       transform:translateX(-200px);
+    }
+}
+
+@keyframes roll {
+    0% {
+       transform:rotate(0deg);
+    }
+    25% {
+       transform:rotate(45deg);
+    }
+    40%,
+    100% {
+       transform:rotate(90deg);
+    }
+}
